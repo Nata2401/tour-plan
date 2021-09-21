@@ -395,7 +395,7 @@ template {
 .navbar-menu {
   list-style: none;
   margin: 0;
-  padding: 31px 0;
+  padding: 31px 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,7 +505,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 18px;
   padding-bottom: 70px;
 }
 
@@ -532,7 +532,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .hotel-name {
@@ -613,7 +613,7 @@ template {
     margin-left: auto;
   }
   .navbar-menu {
-    padding-top: 22px;
+    padding-top: 18px;
     padding-bottom: 22px;
   }
   .navbar-menu__link {
@@ -643,13 +643,7 @@ template {
   }
 }
 
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
-  }
-  .logo__image {
-    width: 100%;
-  }
+@media (max-width: 765px) {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
@@ -680,7 +674,7 @@ template {
   }
   .menu-button__line {
     width: 16px;
-    height: 1px;
+    height: 1.2px;
     background-color: #333333;
   }
   .stars {
@@ -714,10 +708,21 @@ template {
   }
 }
 
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .logo {
+    width: 99px;
+  }
+  .logo__image {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .container {
-    max-width: 280px;
-    width: 85%;
+    width: 87%;
   }
   .logo {
     width: 99px;

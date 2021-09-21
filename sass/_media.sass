@@ -15,7 +15,7 @@
     &__search
       margin-left: auto
     &-menu
-      padding-top: 22px
+      padding-top: 18px
       padding-bottom: 22px
       &__link
         font-size: 14px
@@ -37,11 +37,7 @@
       &__link
         font-size: 12px
         line-height: 15px
-@media (max-width: 576px)
-  .logo
-    width: 99px
-    &__image
-      width: 100%
+@media (max-width: 765px)
   .navbar
     &__search,&-menu, &__user
       display: none
@@ -62,7 +58,7 @@
       cursor: pointer
       &__line
         width: 16px
-        height: 1px
+        height: 1.2px
         background-color: $text-color
   .stars
     flex-basis: auto
@@ -82,10 +78,17 @@
       &__offer
         order: -1
         margin-left: 0
+
+@media (max-width: 576px)
+  .container
+    width: 90%
+  .logo
+    width: 99px
+    &__image
+      width: 100%
 @media only screen and (min-width: 320px) and (max-width: 480px)
   .container
-    max-width: 280px
-    width: 85%
+    width: 87%
   .logo
     width: 99px
     &__image
