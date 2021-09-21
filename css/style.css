@@ -395,7 +395,7 @@ template {
 .navbar-menu {
   list-style: none;
   margin: 0;
-  padding: 31px 13px;
+  padding: 31px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,7 +532,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 2px 0;
+  margin: 1.5px 0;
 }
 
 .hotel-name {
