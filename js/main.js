@@ -8,4 +8,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.slider-button--next',
   },
   effect: "coverflow",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
