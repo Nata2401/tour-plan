@@ -1141,25 +1141,17 @@ template {
             align-items: center;
   }
   .reviews-slider__item {
-    padding: 0 30px 30px;
+    width: 82%;
+    height: 299px;
+    padding: 0 60px 60px;
   }
   .reviews-slider__item:after, .reviews-slider__item:before {
     display: none;
   }
-  .reviews-slider__button {
-    top: 32px;
-  }
-  .reviews-slider__button--prev {
-    left: 50%;
-    margin-left: -65px;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-  }
-  .reviews-slider__button--next {
-    right: 50%;
-    margin-right: -65px;
-    -webkit-transform: translate(50%, 0);
-            transform: translate(50%, 0);
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 47px;
   }
 }
 
@@ -1242,6 +1234,27 @@ template {
   .map {
     width: 100%;
   }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider:after, .reviews-slider:before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -65px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -65px;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1283,6 +1296,53 @@ template {
   }
   .hotel {
     padding-top: 0;
+    margin-top: 7px;
+  }
+  .hotel-slider {
+    height: 180px;
+  }
+  .hotel-info {
+    margin-bottom: 38px;
+  }
+  .hotel-grid {
+    margin-bottom: 40px;
+  }
+  .booking {
+    height: 210px;
+  }
+  .map {
+    height: 172px;
+  }
+  .newsletter {
+    padding: 0;
+    height: 320px;
+  }
+  .newsletter-wrapper {
+    height: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reviews {
+    margin-bottom: 0;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-slider__item {
+    height: 483px;
+    width: 98%;
+  }
+  .container-reviews {
+    height: 661px;
   }
 }
 /*# sourceMappingURL=style.css.map */
