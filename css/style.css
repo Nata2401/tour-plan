@@ -1753,6 +1753,9 @@ template {
   .logo__image {
     width: 100%;
   }
+  .navbar__search {
+    width: 87%;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
