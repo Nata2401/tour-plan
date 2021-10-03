@@ -92,6 +92,9 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &-bottom
+      &__wrapper
+        margin-left: 0
 @media (max-width: 768px)
   .container
     width: 92%
@@ -142,8 +145,26 @@
     padding-top: 57px
     padding-bottom: 40px
   .footer
+    padding-top: 68px
+    &-wrapper
+      margin-bottom: 67px
+    &__logo
+      width: 104px
+      height: 120px
+      padding: 0
     &__input
-      flex-basis: 100%
+      width: 255px
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 3
+    &__legal
+      margin: 0
+    &__contact
+      &-details
+        margin-top: 20px
+  .input
+    width: 255px
 @media (max-width: 765px)
   body
     padding-top: 78px
@@ -410,3 +431,28 @@
   .footer
     &__list
       width: 100%
+    &__social
+      &-network
+        flex-direction: column
+    &__title
+      &--inline
+        margin-bottom: 20px
+    &__contact
+      &-form
+        flex-direction: column
+        width: 100%
+    &__input
+      flex-basis: 100%
+    &-bottom
+      &__wrapper
+        flex-wrap: wrap
+        flex-direction: column
+      &__ul
+        justify-content: space-between
+      &__item
+        margin: 0 0 10px 0
+      &__icon
+        width: 136px
+        height: 22px
+      &__image
+        width: 100%
