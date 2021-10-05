@@ -46,6 +46,7 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -484,6 +485,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -589,6 +591,10 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+}
+
+.hotel-description__modal {
+  margin-bottom: 25px;
 }
 
 .hotel-grid {
@@ -925,6 +931,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   line-height: 100%;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1471,6 +1478,11 @@ template {
   color: #E0E0E0;
 }
 
+.modal__button {
+  text-decoration: none;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1746,7 +1758,9 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    max-height: 100vh;
+    overflow: auto;
+    top: 70px;
     padding-top: 30px;
   }
   .navbar-bottom--visible {
