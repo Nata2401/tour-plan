@@ -64,4 +64,12 @@ closeModalButton.on("click", closeModal);
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  $(document).on('keydown', function (e){
+    if (e.which === 27){
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+    }
+  })
 });
