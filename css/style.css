@@ -2151,5 +2151,19 @@ template {
   .footer-bottom__image {
     width: 100%;
   }
+  .modal__dialog {
+    width: 90%;
+    padding: 15px 40px;
+  }
+  .modal__input {
+    width: 100%;
+  }
+  .modal__message {
+    width: 100%;
+  }
+  .modal__button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
