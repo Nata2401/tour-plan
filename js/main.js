@@ -72,4 +72,28 @@ closeModalButton.on("click", closeModal);
       modalDialog.removeClass("modal__dialog--visible");
     }
   })
+  // Обработка форм
+  $('.form').each(function(){
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "At least two letters",
+      },
+      email: {
+        required: "We need your email to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "We need your phone to contact you",
+     },
+    },
+   });
+  });
 });
+
+$(document).ready(function() {
+    $("#phone").mask("+7 (999) 99-99-999");
+    $("#phone-2").mask("+7 (999) 99-99-999");
+  });
