@@ -43,7 +43,7 @@
         line-height: 15px
   .search
     &__input
-      width: 340px
+      width: 100%
   .hotel
     &-grid
       flex-direction: column
@@ -57,6 +57,7 @@
     width: 340px
   .map
     width: 340px
+    height: 210px
   .reviews
     &-slider
       &__item
@@ -70,6 +71,7 @@
     &-wrapper
       flex-wrap: wrap
   .footer
+    padding-top: 40px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -79,6 +81,7 @@
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
+      margin-bottom: 20px
     &__social
       &-network
         grid-row: 1 / 2
@@ -120,6 +123,14 @@
       &__link
         font-size: 12px
         line-height: 15px
+  .navbar
+    &__search
+      width: 46%
+    &-menu
+      padding-left: 7px
+      padding-right: 7px
+      &__link
+        font-size: 12px
   .hotel
     margin-bottom: 60px
   .newsletter
@@ -265,6 +276,7 @@
       height: 350px
   .booking
     width: 100%
+    margin-bottom: 30px
   .map
     width: 100%
   .newsletter

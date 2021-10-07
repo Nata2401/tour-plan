@@ -6,33 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=6d820240-ffcf-4e9d-9180-233e59b69c3c&lang=ru_RU">
-  </script>
 </head>
 
 <body>
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-
-        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+  
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden" data-aos="fade-down"
+          data-aos-delay="200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-
-        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+  
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden" data-aos="fade-left" data-aos-delay="300">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -64,13 +66,20 @@
                 </button>
               </form>
             </li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
+            <li class="navbar-menu__item" data-aos="flip-down" data-aos-delay="100"><a href="#"
+                class="navbar-menu__link">All Deals</a></li>
+            <li class="navbar-menu__item" data-aos="flip-down" data-aos-delay="300"><a href="#"
+                class="navbar-menu__link">Hotels</a></li>
+            <li class="navbar-menu__item" data-aos="flip-down" data-aos-delay="500"><a href="#"
+                class="navbar-menu__link">Activities</a></li>
+            <li class="navbar-menu__item" data-aos="flip-down" data-aos-delay="700"><a href="#"
+                class="navbar-menu__link">Hotel Day Packages</a></li>
+            <li class="navbar-menu__item" data-aos="flip-down" data-aos-delay="900"><a href="#"
+                class="navbar-menu__link">Restaurants</a></li>
+            <li class="navbar-menu__item" data-aos="flip-down" data-aos-delay="1100"><a href="#"
+                class="navbar-menu__link">Events</a></li>
+            <li class="navbar-menu__item" data-aos="flip-down" data-aos-delay="1300"><a href="#"
+                class="navbar-menu__link">Rodrigues</a></li>
           </ul>
         </nav>
         <!-- /.navbar-menu -->
@@ -196,61 +205,67 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" />
-            <textarea class="footer__message" cols="30" rows="10" placeholder="Message" name="message">
-            </textarea>
-            <button class="button footer__button">Send</button>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="2" required />
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" id="phone" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+            </div>
+            <textarea class="message footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+            <button class="button footer__button" data-aos="zoom-in" data-aos-delay="100">Send</button>
             <span class="footer__info">*Required Fields</span>
           </form>
         </div>
         <!-- /.footer__contact-form -->
-      </div>
-      <!-- /.footer-wrapper -->
-    </div>
-    <!-- /.container -->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-bottom__wrapper">
-          <ul class="footer-bottom__ul">
-            <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Disclaimer</a></li>
-            <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Conditions of use</a></li>
-            <li class="footer-bottom__item footer-bottom__item"><a href="#"
-                class="footer-bottom__link--mr-4">Cancellation policy</a></li>
-          </ul>
-          <div class="footer-bottom__icon"><img class="footer-bottom__image" src="img/bottom-icon.png"
-              alt="Bottom icon"></div>
         </div>
-        <!-- /.footer-bottom__wrapper -->
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.footer-bottom -->
-  </footer>
-  <div class="modal">
-    <div class="modal__overlay"></div>
-    <!-- /.modal__overlay -->
-    <div class="modal__dialog">
-      <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="icon: close">
-      </a>
-      <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
-        <input type="text" class="input modal__input" placeholder="Email*" name="phone" />
-        <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button">Send</button>
-        <span class="modal__info">*Required Fields</span>
-      </form>
-    </div>
-    <!-- /.modal__dialog -->
-  </div>
-  <!-- /.modal -->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+        <!-- /.footer-wrapper -->
+        </div>
+        <!-- /.container -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__wrapper">
+              <ul class="footer-bottom__ul">
+                <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Disclaimer</a></li>
+                <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Conditions of use</a></li>
+                <li class="footer-bottom__item footer-bottom__item"><a href="#" class="footer-bottom__link--mr-4">Cancellation
+                    policy</a></li>
+              </ul>
+              <div class="footer-bottom__icon"><img class="footer-bottom__image" src="img/bottom-icon.png" alt="Bottom icon">
+              </div>
+            </div>
+            <!-- /.footer-bottom__wrapper -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.footer-bottom -->
+        </footer>
+        <div class="modal">
+          <div class="modal__overlay"></div>
+          <!-- /.modal__overlay -->
+          <div class="modal__dialog">
+            <a href="#" class="modal__close">
+              <img src="img/close.svg" alt="icon: close">
+            </a>
+            <h3 class="modal__title modal__title--mb-3">Booking</h3>
+            <form action="send.php" method="POST" class="modal__form form">
+              <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2" />
+              <input type="tel" id="phone-2" class="input modal__input" placeholder="Phone Number*" name="phone" required
+                minlength="2" />
+              <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
+              <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+              <button class="button modal__button">Send</button>
+              <span class="modal__info">*Required Fields</span>
+            </form>
+          </div>
+          <!-- /.modal__dialog -->
+        </div>
+        <!-- /.modal -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-3.3.1.maskedinput.min.js" type="text/javascript"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/main.js"></script>
 </body>
-
 </html>
