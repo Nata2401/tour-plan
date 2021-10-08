@@ -34,12 +34,14 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+  &__subscribe > label
+    position: absolute
+    top: 55px
 .subscribe
   position: relative
   width: 350px
   height: 55px
-  border-radius: 4px
-  overflow: hidden
+
   &__input
     position: absolute
     width: 100%
@@ -51,6 +53,11 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 4px
+    overflow: hidden
+    &-group>#email
+      position: absolute
+      top: 55px
   &__button
     position: absolute
     min-width: 65px
@@ -60,10 +67,12 @@
     border: none
     background-color: $primary
     color: $light
-    font-style: bold
+    font-weight: bold
     font-size: 12px
     line-height: 15px
     line-height: 100%
     cursor: pointer
+    border-radius: 0 4px 4px 0
+    overflow: hidden
   &__button:hover
     opacity: 0.5
